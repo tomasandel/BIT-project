@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+</head>
+<body>
+    <h1>Admin page</h1>
+
+    <form action="/" method="POST">
+        <label for="userInput">Define MOTD (you can use &lt%= name %&gt, &lt%= age %&gt, &lt%= role %&gt):</label><br>
+        <textarea id="userInput" name="userInput" rows="5" cols="50"></textarea><br><br>
+        <button type="submit">Render</button>
+    </form>
+
+    <h2>Message of the Day:</h2>
+    <div style="border: 1px solid black; padding: 10px;">
+        <%= output %>
+    </div>
+</body>
+</html>
